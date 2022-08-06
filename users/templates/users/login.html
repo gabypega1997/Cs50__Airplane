@@ -1,6 +1,8 @@
 {% extends "users/layout.html" %}
 
 {% block body %}
+    {% if message %}
+        <div>{{ message }}</div>
     <form action="{% url 'login' %}" method="post">
         <!-- for Security we use csrf token -->
         {% csrf_token %}
