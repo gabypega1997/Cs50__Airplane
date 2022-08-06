@@ -10,7 +10,7 @@ def index(request):
         return HttpResponseRedirect(reverse("login"))
 
 def login_view(request):
-    return render(request, "url login.html")
+    return render(request, "users/login.html")
 
 def logout_view(request):
     pass
